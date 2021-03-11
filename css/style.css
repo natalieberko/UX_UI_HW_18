@@ -35,10 +35,6 @@ body {
       height:300px;
       width: 300px;
   }
-  .skillsIcon {
-      height: 100px;
-      width: 100px;
-  }
   button {
     padding: 15px;
     background-color: #373738;
@@ -62,13 +58,74 @@ body {
   .flexContainer {
       display: flex;
       flex-direction: row;
-      margin-left: 139px;
       padding: 25px;
       align-items: center;
+      justify-content: center;
   }
-  .skillsIcon {
+  .skill {
+      display: flex;
+      background-color: white;
+      border: solid 1px lightgrey;
+      padding: 25px;
+      width: 150px;
+      height: 325px;
+      margin: 10px;
+      flex-direction: column;
       align-items: center;
   }
+  h3 {
+      text-align: center;
+  }
+  .skill p {
+      text-align: center;
+      justify-content: stretch;
+      margin: 0 auto;
+  }
+  .mySkills h1 {
+      text-align: center;
+      margin-top: 40px;
+      justify-content: center;
+  }
+  .skillsIcon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15px;
+  }
+  .workGrid {
+      margin: 0px 5%;
+      display: grid;
+      grid-template-rows: 600px 600px 600px 600px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "project1 text1"
+      "text2 project2"
+      "project3 text3"
+      "text4 project4";
+  }
+  .project1 {
+      grid-area: project1;
+  }
+  .project2 {
+      grid-area: project2;
+  }
+  .project3 {
+      grid-area: project3;
+  }
+  .project4 {
+      grid-area: project4;
+  }
+  .text1 {
+      grid-area: text1;
+  }
+  .text2 {
+      grid-area: text2;
+  }
+  .text3 {
+    grid-area: text3;
+}
+.text4 {
+    grid-area: text4;
+}
 
   
   
