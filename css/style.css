@@ -92,15 +92,16 @@ body {
     margin-bottom: 15px;
   }
   .workGrid {
-      margin: 0px 5%;
       display: grid;
+      max-width: 1088;
       grid-template-rows: 600px 600px 600px 600px;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 
-      "project1 text1"
+      "project1 text1 "
       "text2 project2"
       "project3 text3"
-      "text4 project4";
+      "text4 project4"
+      ;
   }
   .project1 {
       grid-area: project1;
