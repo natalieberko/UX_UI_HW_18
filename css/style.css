@@ -6,12 +6,14 @@ body {
     width: 40px;
 }
   header {
-    background-color: #373738;
+    background-color:white;
     padding: 15px;
   }
   header ul {
     float: right;
-    color: white;
+    color: #222222;
+    font-family: 'Raleway' sans-serif;
+    font-size: 19px;
   }
   header li {
     display: inline-block;
@@ -20,7 +22,7 @@ body {
   header p {
     display: inline-block;
   }
-  .heroImg {
+  .aboutMe {
     background-color: #EBEBEB;
     padding: 100px 15px;
   }
@@ -29,7 +31,25 @@ body {
     margin: 0 auto;
     padding: 50px;
     background-color: #FFFFFF;
-    text-align: center;
+    text-align: left;
+  }
+  .heroImg {
+    background-color: #e0ebff;
+  }
+  .heroContent {
+    max-width: 812px;
+    margin-left: 89px;
+    padding: 50px;
+    height: 600px;
+  }
+  .heroContent h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    font-weight: normal;
+  }
+  .heroContent p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
   }
   .photo1 {
       height:300px;
@@ -43,17 +63,41 @@ body {
     border-radius: 4px;
   }
   footer {
-    background-color: #373738;
-    padding: 5px;
+    background-color: #e0ebff;
+    color: black;
+    display: grid;
+    min-height: 557px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "footerGrid" 
+  }
+  .footerGrid {
+    background-size: cover;
+    display: flex;
+  }
+  .email {
+    background-color: rgba(90,148,255,0.36);
+    align-items: flex-start;
+    left: 139px;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  .fa-twitter {
+    background: #222222;
     color: white;
   }
-  footer ul {
-    list-style: none;
-    padding-left: 5px;
-  }
-  footer li {
-    display: inline-block;
-    padding: 0px 7px;
+  .fa-linkedin {
+    background: #222222;
+    color: white;
   }
   .flexContainer {
       display: flex;
@@ -67,8 +111,8 @@ body {
       background-color: white;
       border: solid 1px lightgrey;
       padding: 25px;
-      width: 150px;
-      height: 325px;
+      width: 200px;
+      height: 350px;
       margin: 10px;
       flex-direction: column;
       align-items: center;
@@ -77,9 +121,10 @@ body {
       text-align: center;
   }
   .skill p {
-      text-align: center;
+      text-align: left;
       justify-content: stretch;
       margin: 0 auto;
+      font-family: 'Raleway',sans-serif;
   }
   .mySkills h1 {
       text-align: center;
@@ -93,40 +138,52 @@ body {
   }
   .workGrid {
       display: grid;
-      max-width: 1088;
-      grid-template-rows: 600px 600px 600px 600px;
-      grid-template-columns: 1fr 1fr;
+      margin-left: 139px;
+      min-height: 2828px;
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-columns: 1fr;
       grid-template-areas: 
-      "project1 text1 "
-      "text2 project2"
-      "project3 text3"
-      "text4 project4"
+      "project1"
+      "project2"
+      "project3"
+      "project4"
       ;
   }
   .project1 {
       grid-area: project1;
+      width: 847px;
   }
   .project2 {
       grid-area: project2;
+      width: 847px;
   }
   .project3 {
       grid-area: project3;
   }
   .project4 {
       grid-area: project4;
-  }
-  .text1 {
-      grid-area: text1;
-  }
-  .text2 {
-      grid-area: text2;
-  }
-  .text3 {
-    grid-area: text3;
 }
-.text4 {
-    grid-area: text4;
+.project1 img {
+  height: 410px;
+  width: 504px;
+  float: right;
 }
+.project2 img {
+  height: 410px;
+  width: 504px;
+  float: left;
+}
+.project3 img {
+  height: 435px;
+  width: 796px;
+  float: right;
+}
+.project4 img {
+  height: 514px;
+  width: 720px;
+  float: left;
+}
+
 
   
   
