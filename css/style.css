@@ -4,6 +4,7 @@ body {
 .logo {
     height: 40px;
     width: 40px;
+    padding-left: 124px;
 }
   header {
     background-color:white;
@@ -14,24 +15,14 @@ body {
     color: #222222;
     font-family: 'Raleway' sans-serif;
     font-size: 19px;
+    padding-right: 124px;
   }
   header li {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 0px 25px;
   }
   header p {
     display: inline-block;
-  }
-  .aboutMe {
-    background-color: #EBEBEB;
-    padding: 100px 15px;
-  }
-  .content {
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 50px;
-    background-color: #FFFFFF;
-    text-align: left;
   }
   .heroImg {
     background-color: #e0ebff;
@@ -57,90 +48,39 @@ body {
   }
   button {
     padding: 15px;
-    background-color: #373738;
-    color: white;
-    font-size: 15px;
-    border-radius: 4px;
-  }
-  footer {
-    background-color: #e0ebff;
     color: black;
-    display: grid;
-    min-height: 557px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "footerGrid" 
+    font-size: 16px;
+    border: none;
+    background-color: white;
   }
-  .footerGrid {
-    background-size: cover;
-    display: flex;
-  }
-  .email {
-    background-color: rgba(90,148,255,0.36);
-    align-items: flex-start;
-    left: 139px;
-  }
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    height: 30px;
+   h4 {
+    overflow: hidden;
     text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
+    margin-top: 60px;
   }
-  .fa-twitter {
-    background: #222222;
-    color: white;
+  
+  h4:before {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 5%;
   }
-  .fa-linkedin {
-    background: #222222;
-    color: white;
+  
+   h4:before {
+    right: 0.5em;
+    margin-left: -61%;
   }
-  .flexContainer {
-      display: flex;
-      flex-direction: row;
-      padding: 25px;
-      align-items: center;
-      justify-content: center;
-  }
-  .skill {
-      display: flex;
-      background-color: white;
-      border: solid 1px lightgrey;
-      padding: 25px;
-      width: 200px;
-      height: 350px;
-      margin: 10px;
-      flex-direction: column;
-      align-items: center;
-  }
-  h3 {
-      text-align: center;
-  }
-  .skill p {
-      text-align: left;
-      justify-content: stretch;
-      margin: 0 auto;
-      font-family: 'Raleway',sans-serif;
-  }
-  .mySkills h1 {
-      text-align: center;
-      margin-top: 40px;
-      justify-content: center;
-  }
-  .skillsIcon {
-    height: 50px;
-    width: 50px;
-    margin-bottom: 15px;
-  }
+
   .workGrid {
       display: grid;
+      margin-top: 80px;
+      margin-right: 139px;
       margin-left: 139px;
       min-height: 2828px;
-      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-rows: 512px 512px 512px 512px;
       grid-template-columns: 1fr;
       grid-template-areas: 
       "project1"
@@ -151,39 +91,89 @@ body {
   }
   .project1 {
       grid-area: project1;
-      width: 847px;
+      background-color:#9AAFEB;
+      display: flex;
+      margin-bottom: 40px;
   }
   .project2 {
       grid-area: project2;
-      width: 847px;
+      display: flex;
+      background-color:#FFD8D0;
+      margin-bottom: 40px;
   }
   .project3 {
       grid-area: project3;
+      display: flex;
+      background-color: #9CC8E0;
+      margin-bottom: 40px;
   }
   .project4 {
       grid-area: project4;
+      display: flex;
+      background-color: #F4D0A2;
+      margin-bottom: 40px;
 }
-.project1 img {
-  height: 410px;
-  width: 504px;
-  float: right;
+.projectInfo {
+  padding-left: 92px;
 }
-.project2 img {
-  height: 410px;
-  width: 504px;
-  float: left;
+.viewProject {
+  font-weight: bold;
 }
-.project3 img {
-  height: 435px;
-  width: 796px;
-  float: right;
+.workGrid h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
 }
-.project4 img {
-  height: 514px;
-  width: 720px;
-  float: left;
+.workGrid p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 }
-
-
-  
-  
+footer {
+  background-color: #e0ebff;
+}
+#email a {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  padding-top: 10vh;
+}
+.contactItems {
+  width: 585px;
+  height: 426px;
+  background-color: rgba(90,148,255,0.36);
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 90px;
+  position: relative;
+  left: 10%;
+  top: -11vh;
+  border: 0px;
+  border-radius: 4px;
+}
+#footerText {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  padding-top: 43px;
+}
+#copyright {
+  text-align: center;
+  margin: 0 auto;
+}
+.socialMedia {
+  display: flex;
+  width: 235px;
+  position: absolute;
+  top: 350px;
+  right: 58px;
+  align-items: center;
+  justify-content: space-between;
+}
+#connectText {
+  font-family: 'Raleway', sans-serif;
+  font-size: 19px;
+  display: flex;
+  position: absolute;
+  top: 274px;
+  right:114px;
+}
