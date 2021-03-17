@@ -94,31 +94,51 @@ body {
       background-color:#9AAFEB;
       display: flex;
       margin-bottom: 40px;
+      padding-top: 40px;
   }
   .project2 {
       grid-area: project2;
       display: flex;
       background-color:#FFD8D0;
       margin-bottom: 40px;
+      padding-top: 40px;
+
   }
   .project3 {
       grid-area: project3;
       display: flex;
       background-color: #9CC8E0;
       margin-bottom: 40px;
+      padding-top: 40px;
+
   }
   .project4 {
       grid-area: project4;
       display: flex;
       background-color: #F4D0A2;
       margin-bottom: 40px;
+      padding-top: 40px;
+
 }
-.projectInfo {
+
+.projectInfo h3{
+  padding-left: 92px;
+}
+.projectInfo p{
+  padding-bottom: 100px;
   padding-left: 92px;
 }
 .viewProject {
   font-weight: bold;
+  width: 229px;
+  background-color: rgba(255,255,255,.67);
+  text-align: end;
 }
+#screens3, #screens4 {
+  padding: 2vw;
+  padding: 2vh;
+}
+
 .workGrid h3 {
   font-family: 'Playfair Display', serif;
   font-size: 40px;
@@ -127,6 +147,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
+  
 footer {
   background-color: #e0ebff;
 }
@@ -176,4 +197,65 @@ footer {
   position: absolute;
   top: 274px;
   right:114px;
+}
+
+@media only screen and (max-width: 600){
+  .workGrid {
+    display: grid;
+    margin-top: 80px;
+    margin-right: 18px;
+    margin-left: 18px;
+    min-height: 2400px;
+    grid-template-rows: 512px 512px 512px 512px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "project1"
+    "project2"
+    "project3"
+    "project4"
+    ;
+}
+.project1 {
+    grid-area: project1;
+    background-color:#9AAFEB;
+    display: flex;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    flex-direction: column;
+    width: 100%;
+}
+.project2 {
+    grid-area: project2;
+    display: flex;
+    background-color:#FFD8D0;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+.project3 {
+    grid-area: project3;
+    display: flex;
+    background-color: #9CC8E0;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+.project4 {
+    grid-area: project4;
+    display: flex;
+    background-color: #F4D0A2;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
 }
