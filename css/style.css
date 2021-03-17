@@ -213,7 +213,7 @@ right:114px;
   .workGrid {
     margin-right: 18px;
     margin-left: 18px;
-    grid-template-rows: 512px 512px 512px 512px;
+    grid-template-rows: 412px 412px 412px 412px;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "screens1"
@@ -227,10 +227,12 @@ right:114px;
     ;
 }
 .workGridArea {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 5vh;
-  width: 100%;
+  margin-top: 0;
+}
+#project1, #project2, #project3, #project4 {
+  margin-bottom: 40px;
+}
+#project4 {
+  margin-bottom: 200px;
 }
 }
