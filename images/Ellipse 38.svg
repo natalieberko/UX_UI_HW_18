@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="440" viewBox="0 0 440 440">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(250,128,114,0.15);
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_38" data-name="Ellipse 38" class="cls-1" cx="220" cy="220" r="220"/>
+</svg>
