@@ -107,21 +107,25 @@ body {
   #screens1 {
     grid-area: screens1;
     background-color:#9AAFEB;
+    margin: 0 auto;
   
   }
   #screens2 {
     grid-area: screens2;
     background-color:#FFD8D0;
+    margin: 0 auto;
   
   }
   #screens3 {
     grid-area: screens3;
     background-color: #9CC8E0;
+    margin: 0 auto;
   
   }
   #screens4 {
     grid-area: screens4;
     background-color: #F4D0A2;
+    margin: 0 auto;
   }
   .workGridArea {
     background-position: center;
