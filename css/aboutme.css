@@ -24,17 +24,16 @@ body {
   header p {
     display: inline-block;
   }
-  .heroContent {
-    height: 600px;
-    display: flex;
+  .heroImg {
+    display: inline-block;
+    max-height: 600px;
   }
+
   #heroText {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
   }
-  #heroImg {
-      float: left;
-  }
+  
 
   .myStory {
       margin-left: 139px;

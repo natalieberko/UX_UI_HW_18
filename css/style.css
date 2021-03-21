@@ -26,26 +26,30 @@ header p {
 }
 .heroImg {
   background-color: #e0ebff;
+  width: 100%;
+  display: flex;
 }
 .heroContent {
-  max-width: 812px;
-  margin-left: 89px;
-  padding: 50px;
-  height: 600px;
+  margin-left:139px;
+  flex-direction: column;
+
 }
 .heroContent h1 {
   font-family: 'Playfair Display', serif;
   font-size: 45px;
-  font-weight: normal;
+  font-weight: bold;
 }
 .heroContent p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
 }
-.photo1 {
-    height:300px;
-    width: 300px;
+.heroText {
+  width: 50%;
 }
+#heroPhoto img {
+  width: 50%;
+}
+
 button {
   padding: 15px;
   color: black;
@@ -91,47 +95,36 @@ h4:before {
 }
 #project1 {
     grid-area: project1;
-    background-color:#9AAFEB;
 }
 #project2 {
     grid-area: project2;
-    background-color:#FFD8D0;
 
 }
 #project3 {
     grid-area: project3;
-    background-color: #9CC8E0;
 
 }
 #project4 {
     grid-area: project4;
-    background-color: #F4D0A2;
 }
 #screens1 {
   grid-area: screens1;
-  background-color:#9AAFEB;
-
 }
 #screens2 {
   grid-area: screens2;
-  background-color:#FFD8D0;
 
 }
 #screens3 {
   grid-area: screens3;
-  background-color: #9CC8E0;
 
 }
 #screens4 {
   grid-area: screens4;
-  background-color: #F4D0A2;
 }
 .workGridArea {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-top: 40px;
-  padding-top: 5vh;
+  padding-top: 3.5vh;
+  background-color: #333333;
 }
 .workGridArea p {
   padding-left: 6vw;
@@ -149,13 +142,17 @@ text-align: end;
 }
 
 .workGrid h3 {
-font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
 font-size: 40px;
+color: white;
+font-style: italic;
+font-weight: bold;
 }
 .workGrid p {
 font-family: 'Raleway', sans-serif;
 font-size: 18px;
 padding-bottom: 100px;
+color: white;
 }
 
 footer {
