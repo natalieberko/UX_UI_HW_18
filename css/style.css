@@ -30,17 +30,20 @@ header p {
   width:100%;
 }
 .heroContent {
-  margin-left:139px;
   display: flex;
 }
 .heroContent h1 {
   font-family: 'Playfair Display', serif;
   font-size: 45px;
   font-weight: bold;
+  margin-left: 139px;
+  width: 100%;
 }
 .heroContent p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
+  margin-left: 139px;
+  padding-top: 15px;
 }
 .heroText {
   width: 75%;
@@ -52,9 +55,17 @@ header p {
 }
 #seeWork {
   margin-top: 20vh;
+  color:black;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px;
+  width: 229px;
+  text-align: end;
 }
 
-button {
+.viewProject {
   padding: 15px;
   color: black;
   font-size: 16px;
